@@ -1,0 +1,41 @@
+1. NEWTON value
+
+STORE "force" without any value
+STORE "massa" with 600
+STORE "acceleration" with 2
+
+CALCULATE "massa" times "acceleration"
+SET "force" with calculation value result
+
+DISPLAY "force"
+
+2. Tahun Kabisat
+STORE "tahun" with any value
+
+IF "tahun" modulo 4 equals 0 and "tahun" modulo 100 not equals 0 and "tahun"
+modulo 400 equals 0 or "tahun" modulo 100 equals 0
+  THEN DISPLAY "Tahun Kabisat"
+  ELSE DISPLAY "Bukan Tahun Kabisat"
+
+3. Laundry Day
+
+STORE "cucian" equals to 0
+
+WHILE "cucian" < 20
+  DO DISPLAY "cucian"
+  ADD "cucian" by 1
+
+4. Periksa Kuku
+
+STORE "jumlahMurid" equals 40
+
+STORE "kukuPanjang" equals to array value of [3,14,20] // example [murid ke-3 , 14, dan 20 memiliki kuku panjang]
+STORE "murid" equals 1
+
+WHILE "murid" <= "jumlahMurid"
+  DO
+    IF "kukuPanjang" includes "murid"
+      DISPLAY "Dihukum"
+    ELSE
+      DISPLAY "Reward"
+    ADD "murid" with 1
