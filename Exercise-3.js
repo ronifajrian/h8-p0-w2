@@ -1,4 +1,4 @@
-var nama = "adfsdf";
+var nama = "Mikael";
 var peran = "";
 
 if (nama == "") {
